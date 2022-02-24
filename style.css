@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, rgb(132, 201, 147), rgb(65, 224, 86));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    font-size: 30px; 
+    align-items: center;
+}
+
+.social span{
+    font-size: 20px;
+}
+
+.social div{
+    margin: 10px 0;  
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.social div:hover span{
+    text-decoration: underline;
+}
+
+.social div:hover{
+    transform: scale(1.1);
+}
+
+.face a{
+    color: rgb(62, 62, 197);
+}
+
+.ins a{
+    color: rgb(175, 15, 15);
+}
+
+.youtu a{
+    color: red;
+}
+
+.twit a{
+    color: white;
+}
+
+.camera a{
+    color: rgb(218, 56, 164);
+}
+
+.Item{
+    background: #333;
+    width: 70px;
+    height: 500px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;  border-radius: 10px;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.Item:hover{
+    color: pink;
+}
+
+.Item__image{
+    width: 100%;
+    height: 100%;
+    /* background: transparent;
+    padding: 20px 100px 20px 20px; */
+    font-size: 35px;
+    transition: 0.5s;
+    /* color: white; */
+    /* outline: none; */
+}
+
+.Item__btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 500px;
+    padding-top: 200px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(170, 238, 153), rgb(67, 168, 226));
+    /* border: none; */
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.Item.open{
+    width: 400px;
+}
+
